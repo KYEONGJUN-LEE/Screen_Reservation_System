@@ -25,5 +25,5 @@ ALTER TABLE customer MODIFY id INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY(id);
 ALTER TABLE screen MODIFY id INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY(id);
 
 #8 결과 값 출력
+SELECT c.name, s.name, s.theater, s.time, c.phone FROM customer c CROSS JOIN screen s ORDER BY c.name;
 SELECT c.name, s.name, s.theater, s.time, c.phone FROM customer c INNER JOIN screen s ON c.id = s.id;
-
