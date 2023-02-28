@@ -17,8 +17,8 @@ INSERT INTO screen (id, name, theater, time) VALUES ('1','아바타','5','2023-0
 INSERT INTO screen (id, name, theater, time) VALUES ('2','스파이더맨','6','2023-02-27 17:00:00');
 INSERT INTO screen (id, name, theater, time) VALUES ('3','아이언맨','7','2023-02-27 19:00:00'); 
 
-#6. movie 테이블 값 출력
-SELECT * FROM movie;
+#6. screen 테이블 값 출력
+SELECT * FROM screen;
 
 #7. 기본키 지정
 ALTER TABLE customer MODIFY id INT NOT NULL AUTO_INCREMENT, ADD PRIMARY KEY(id);
